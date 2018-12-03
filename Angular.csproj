@@ -24,6 +24,67 @@
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="node_modules\classlist.js\package.json" />
+    <Content Include="node_modules\classlist.js\tests\qunit.html" />
+    <Content Include="node_modules\web-animations-js\package.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="node_modules\classlist.js\.travis.yml" />
+    <None Include="node_modules\classlist.js\classList.js" />
+    <None Include="node_modules\classlist.js\classList.min.js" />
+    <None Include="node_modules\classlist.js\LICENSE.md" />
+    <None Include="node_modules\classlist.js\README.md" />
+    <None Include="node_modules\classlist.js\script\test" />
+    <None Include="node_modules\classlist.js\tests\remove.js" />
+    <None Include="node_modules\classlist.js\tests\runner.coffee" />
+    <None Include="node_modules\classlist.js\tests\tests.js" />
+    <None Include="node_modules\web-animations-js\History.md" />
+    <None Include="node_modules\web-animations-js\README.md" />
+    <None Include="node_modules\web-animations-js\src\animation.js" />
+    <None Include="node_modules\web-animations-js\src\apply-preserving-inline-style.js" />
+    <None Include="node_modules\web-animations-js\src\apply.js" />
+    <None Include="node_modules\web-animations-js\src\box-handler.js" />
+    <None Include="node_modules\web-animations-js\src\color-handler.js" />
+    <None Include="node_modules\web-animations-js\src\deprecation.js" />
+    <None Include="node_modules\web-animations-js\src\dev.js" />
+    <None Include="node_modules\web-animations-js\src\dimension-handler.js" />
+    <None Include="node_modules\web-animations-js\src\effect-callback.js" />
+    <None Include="node_modules\web-animations-js\src\element-animatable.js" />
+    <None Include="node_modules\web-animations-js\src\font-weight-handler.js" />
+    <None Include="node_modules\web-animations-js\src\group-constructors.js" />
+    <None Include="node_modules\web-animations-js\src\handler-utils.js" />
+    <None Include="node_modules\web-animations-js\src\interpolation.js" />
+    <None Include="node_modules\web-animations-js\src\keyframe-effect-constructor.js" />
+    <None Include="node_modules\web-animations-js\src\keyframe-effect.js" />
+    <None Include="node_modules\web-animations-js\src\keyframe-interpolations.js" />
+    <None Include="node_modules\web-animations-js\src\matrix-decomposition.js" />
+    <None Include="node_modules\web-animations-js\src\matrix-interpolation.js" />
+    <None Include="node_modules\web-animations-js\src\normalize-keyframes.js" />
+    <None Include="node_modules\web-animations-js\src\number-handler.js" />
+    <None Include="node_modules\web-animations-js\src\position-handler.js" />
+    <None Include="node_modules\web-animations-js\src\property-interpolation.js" />
+    <None Include="node_modules\web-animations-js\src\property-names.js" />
+    <None Include="node_modules\web-animations-js\src\scope.js" />
+    <None Include="node_modules\web-animations-js\src\shadow-handler.js" />
+    <None Include="node_modules\web-animations-js\src\shape-handler.js" />
+    <None Include="node_modules\web-animations-js\src\tick.js" />
+    <None Include="node_modules\web-animations-js\src\timeline.js" />
+    <None Include="node_modules\web-animations-js\src\timing-utilities.js" />
+    <None Include="node_modules\web-animations-js\src\transform-handler.js" />
+    <None Include="node_modules\web-animations-js\src\visibility-handler.js" />
+    <None Include="node_modules\web-animations-js\src\web-animations-bonus-cancel-events.js" />
+    <None Include="node_modules\web-animations-js\src\web-animations-bonus-object-form-keyframes.js" />
+    <None Include="node_modules\web-animations-js\src\web-animations-next-animation.js" />
+    <None Include="node_modules\web-animations-js\web-animations-next-lite.min.js" />
+    <None Include="node_modules\web-animations-js\web-animations-next-lite.min.js.map" />
+    <None Include="node_modules\web-animations-js\web-animations-next.min.js" />
+    <None Include="node_modules\web-animations-js\web-animations-next.min.js.map" />
+    <None Include="node_modules\web-animations-js\web-animations.min.js" />
+    <None Include="node_modules\web-animations-js\web-animations.min.js.map" />
+  </ItemGroup>
+
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
