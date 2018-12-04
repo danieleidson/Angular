@@ -32,6 +32,11 @@
                 <span class='glyphicon glyphicon-th-list'></span> Reusable Component List
               </a>
             </li>
+            <li [routerLinkActive]='["link-active"]'>
+              <a [routerLink]='["/about-us"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-th-list'></span> About Us
+              </a>
+            </li>
           </ul>
         </div>
     </div>

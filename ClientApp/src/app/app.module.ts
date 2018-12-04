@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
+import { AboutUsComponent } from './about-us/about-us.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    ReusableComponent
+    ReusableComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,6 +36,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'reusable-component', component: ReusableComponent },
+      { path: 'about-us', component: AboutUsComponent }
     ])
   ],
   providers: [],
